@@ -157,14 +157,15 @@ html, body
         padding: 0
         display: flex
         align-items: center
+        justify-content: center
         flex-wrap: wrap
         width: 100%
         li
             width: 45%
             display: flex
             align-items: center
-            margin: 0 10px 25px 0
-            min-height: 80px
+            margin: 0 25px 25px 0
+            min-height: 110px
             padding: 15px
             background: #595959
             border-radius: 15px
@@ -311,3 +312,118 @@ html, body
 
                 img
                     width: 70%
+
+.price
+    display: flex
+    flex-direction: column
+    justify-content: center
+    padding: 100px 0
+
+    &__block
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+
+        h2
+            font-size: 50px
+            font-weight: bold
+            &:not(:first-child)
+                margin: 80px 0 0 0
+
+        h3
+            font-size: 16px
+            font-weight: 400
+            color: #5f5f5f
+
+    &__item
+        background: $darkBlue
+        min-height: 340px
+        width: 900px
+        color: #fff
+        display: flex
+        flex-direction: column
+        align-items: center
+        padding: 30px 40px
+        margin: 30px 0 0 0
+
+        &__name
+            color: $yellow
+            font-weight: 500
+            font-size: 30px
+
+        &__row
+            border-bottom: 4px solid $yellow
+            display: flex
+            justify-content: space-between
+            align-items: center
+            width: 100%
+            margin: 10px 0 0 0
+
+            & *
+                font-size: 25px
+                font-weight: bold
+
+.cost-delivery
+    padding: 10vh 11vw
+    h2
+        font-size: 50px
+        font-weight: bold
+
+    h3
+        font-size: 16px
+        font-weight: 400
+        color: #5f5f5f
+
+    &__container
+        display: flex
+        align-items: flex-end
+        justify-content: space-between
+        padding: 30px 0 0 0
+        .truck-image
+            width: 50%
+            img
+                width: 100%
+                max-width: 100%
+
+        form
+            background-color: #6a6e7e
+            background-position: center center
+            border-color: transparent
+            border-style: solid
+            width: 37%
+            min-height: 500px
+            padding: 20px 30px
+
+            select, input
+                width: 100%
+                color: rgb(44, 48, 57)
+                border: 1px solid rgb(44, 48, 57)
+                background-color: rgb(255, 255, 255)
+                font-size: 16px
+                font-weight: 500
+                height: 50px
+                padding: 0 15px
+                margin: 0 0 20px 0
+                appearance: none
+
+            select
+                appearance: none
+                background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e")
+                background-repeat: no-repeat
+                background-position: right 1rem center
+                background-size: 1em
+
+            input::-webkit-outer-spin-button,
+            input::-webkit-inner-spin-button
+                -webkit-appearance: none
+                margin: 0
+
+            input[type=number]
+                -moz-appearance: textfield
+
+    button
+        width: 100%
+        background: $yellow
+        border: none
+        padding: 10px 0

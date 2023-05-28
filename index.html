@@ -303,5 +303,148 @@
         </div>
       </div>
     </section>
+
+    <section class="section price">
+      <div class="price__block">
+        <h2>Стоимость щебня</h2>
+        <h3>
+          Специальные условия доставки щебня с карьера в больших объёмах, при
+          заказе на сайте.
+        </h3>
+
+        <div class="price__item">
+          <div class="price__item__name">Щебень</div>
+          <div class="price__item__row">
+            <div class="price__item__amount">от 30 до 100 тонн</div>
+            <div class="price__item__amount-price">от 950₽/тонна</div>
+          </div>
+          <div class="price__item__row">
+            <div class="price__item__amount">от 100 до 300 тонн</div>
+            <div class="price__item__amount-price">от 930₽/тонна</div>
+          </div>
+          <div class="price__item__row">
+            <div class="price__item__amount">от 300 до 500 тонн</div>
+            <div class="price__item__amount-price">от 915₽/тонна</div>
+          </div>
+          <div class="price__item__row">
+            <div class="price__item__amount">от 500 до 1000 тонн</div>
+            <div class="price__item__amount-price">от 900₽/тонна</div>
+          </div>
+        </div>
+
+        <h2>Стоимость ПГС</h2>
+        <h3>
+          Специальные условия доставки песчаной-гравийной смеси (пгс), при
+          заказе на сайте.
+        </h3>
+
+        <div class="price__item">
+          <div class="price__item__name">ПГС - содержания гравия до 10%</div>
+          <div class="price__item__row">
+            <div class="price__item__amount">от 30 до 100 тонн</div>
+            <div class="price__item__amount-price">от 250₽/тонна</div>
+          </div>
+          <div class="price__item__row">
+            <div class="price__item__amount">от 100 до 300 тонн</div>
+            <div class="price__item__amount-price">от 240₽/тонна</div>
+          </div>
+          <div class="price__item__row">
+            <div class="price__item__amount">от 300 до 500 тонн</div>
+            <div class="price__item__amount-price">от 230₽/тонна</div>
+          </div>
+          <div class="price__item__row">
+            <div class="price__item__amount">от 500 до 1000 тонн</div>
+            <div class="price__item__amount-price">от 220₽/тонна</div>
+          </div>
+        </div>
+
+        <div class="price__item">
+          <div class="price__item__name">ПГС - содержания гравия 25 - 30%</div>
+          <div class="price__item__row">
+            <div class="price__item__amount">от 30 до 100 тонн</div>
+            <div class="price__item__amount-price">от 300₽/тонна</div>
+          </div>
+          <div class="price__item__row">
+            <div class="price__item__amount">от 100 до 300 тонн</div>
+            <div class="price__item__amount-price">от 290₽/тонна</div>
+          </div>
+          <div class="price__item__row">
+            <div class="price__item__amount">от 300 до 500 тонн</div>
+            <div class="price__item__amount-price">от 280₽/тонна</div>
+          </div>
+          <div class="price__item__row">
+            <div class="price__item__amount">от 500 до 1000 тонн</div>
+            <div class="price__item__amount-price">от 275₽/тонна</div>
+          </div>
+        </div>
+
+        <div class="price__item">
+          <div class="price__item__name">ПГС - содержания гравия более 50%</div>
+          <div class="price__item__row">
+            <div class="price__item__amount">от 30 до 100 тонн</div>
+            <div class="price__item__amount-price">от 450₽/тонна</div>
+          </div>
+          <div class="price__item__row">
+            <div class="price__item__amount">от 100 до 300 тонн</div>
+            <div class="price__item__amount-price">от 440₽/тонна</div>
+          </div>
+          <div class="price__item__row">
+            <div class="price__item__amount">от 300 до 500 тонн</div>
+            <div class="price__item__amount-price">от 430₽/тонна</div>
+          </div>
+          <div class="price__item__row">
+            <div class="price__item__amount">от 500 до 1000 тонн</div>
+            <div class="price__item__amount-price">от 420₽/тонна</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cost-delivery">
+      <h2>Рассчитайте стоимость с доставкой</h2>
+      <h3>
+        Окончательная цена определяться при заключении договора и зависит от
+        вида груза, объема и расстояния
+      </h3>
+      <div class="cost-delivery__container">
+        <div class="truck-image">
+          <img src="img/cost-delivery/truck.png" alt="Truck" />
+        </div>
+        <form action="/send.php">
+          <select name="select" id="firstSelect">
+            <option value>Выберите продукцию</option>
+            <option value="Щебень">Щебень</option>
+            <option value="3-8 (евро)">3-8 (евро)</option>
+            <option value="5-10,5-20">5-10,5-20</option>
+            <option value="20-40">20-40</option>
+            <option value="40-70">40-70</option>
+            <option value="ПГС">ПГС</option>
+            <option value="Асфальтобетон">Асфальтобетон</option>
+          </select>
+          <input
+            type="number"
+            id="weightInput"
+            placeholder="Вес в тоннах (мин от 30)"
+          />
+          <input type="date" id="dataInput" placeholder="Дата поставки" />
+          <input
+            type="text"
+            id="adressInput"
+            placeholder="Адрес доставки"
+          />
+          <input
+            type="number"
+            id="telephoneInput"
+            placeholder="+71234567890"
+          />
+          <input
+            type="text"
+            id="nameInput"
+            placeholder="Имя"
+          />
+          <button type="submit">Отправить</button>
+        </form>
+      </div>
+    </section>
   </body>
 </html>

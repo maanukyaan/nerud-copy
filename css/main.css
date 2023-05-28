@@ -159,6 +159,7 @@ html .cta-button:hover, body .cta-button:hover {
   padding: 0;
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   width: 100%;
 }
@@ -166,8 +167,8 @@ html .cta-button:hover, body .cta-button:hover {
   width: 45%;
   display: flex;
   align-items: center;
-  margin: 0 10px 25px 0;
-  min-height: 80px;
+  margin: 0 25px 25px 0;
+  min-height: 110px;
   padding: 15px;
   background: #595959;
   border-radius: 15px;
@@ -324,4 +325,129 @@ html .cta-button:hover, body .cta-button:hover {
 }
 .catalog__item .item__image img {
   width: 70%;
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 100px 0;
+}
+.price__block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.price__block h2 {
+  font-size: 50px;
+  font-weight: bold;
+}
+.price__block h2:not(:first-child) {
+  margin: 80px 0 0 0;
+}
+.price__block h3 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #5f5f5f;
+}
+.price__item {
+  background: #2C3039;
+  min-height: 340px;
+  width: 900px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 40px;
+  margin: 30px 0 0 0;
+}
+.price__item__name {
+  color: #ffda00;
+  font-weight: 500;
+  font-size: 30px;
+}
+.price__item__row {
+  border-bottom: 4px solid #ffda00;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 10px 0 0 0;
+}
+.price__item__row * {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.cost-delivery {
+  padding: 10vh 11vw;
+}
+.cost-delivery h2 {
+  font-size: 50px;
+  font-weight: bold;
+}
+.cost-delivery h3 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #5f5f5f;
+}
+.cost-delivery__container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 30px 0 0 0;
+}
+.cost-delivery__container .truck-image {
+  width: 50%;
+}
+.cost-delivery__container .truck-image img {
+  width: 100%;
+  max-width: 100%;
+}
+.cost-delivery__container form {
+  background-color: #6a6e7e;
+  background-position: center center;
+  border-color: transparent;
+  border-style: solid;
+  width: 37%;
+  min-height: 500px;
+  padding: 20px 30px;
+}
+.cost-delivery__container form select, .cost-delivery__container form input {
+  width: 100%;
+  color: rgb(44, 48, 57);
+  border: 1px solid rgb(44, 48, 57);
+  background-color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 500;
+  height: 50px;
+  padding: 0 15px;
+  margin: 0 0 20px 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.cost-delivery__container form select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 1em;
+}
+.cost-delivery__container form input::-webkit-outer-spin-button,
+.cost-delivery__container form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.cost-delivery__container form input[type=number] {
+  -moz-appearance: textfield;
+}
+.cost-delivery button {
+  width: 100%;
+  background: #ffda00;
+  border: none;
+  padding: 10px 0;
 }/*# sourceMappingURL=main.css.map */
