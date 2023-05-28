@@ -1,0 +1,313 @@
+// Variables
+$yellow: #ffda00
+$darkBlue: #2C3039
+
+html, body
+    width: 100%
+    height: 100%
+    min-height: 100%
+    min-width: 100%
+    font-family: 'Jost', sans-serif
+
+    ul
+        list-style-type: none
+
+    a
+        text-decoration: none
+        color: inherit
+        transition: all .3s ease
+        display: block
+
+        &:hover
+            color: $yellow
+
+    .cta-button
+        color: #2c3039
+        font-size: 16px
+        font-family: 'Jost',Arial,sans-serif
+        line-height: 1.55
+        font-weight: 500
+        border-width: 2px
+        border-radius: 0px
+        min-width: 100px
+        max-width: 250px
+        display: flex
+        justify-content: center
+        align-items: center
+        white-space: nowrap
+        padding: 13px 35px
+        background-color: #ffda00
+        background-position: center center
+        border-color: #2c3039
+        border-style: solid
+        transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out
+        &:hover
+            color: #000
+            background: #fff
+
+.header
+    width: 100%
+    height: 100vh
+    background-image: linear-gradient(rgb(255, 255, 255, 0.8), rgba(255, 255, 255, 0.9)), url("../img/header/header_bg.png")
+    background-position: center
+    background-size: cover
+    position: relative
+
+    .nav
+        background: #fff
+        width: 100%
+        margin: 0
+        padding: 0
+        &__main-ul
+            margin: 0
+            padding: 10px 11vw
+            width: 100%
+            display: flex
+            justify-content: space-between
+            align-items: center
+
+        &__logo
+            img
+                height: 60px
+
+        &__links
+            width: 50%
+            ul
+                width: 100%
+                display: flex
+                align-items: center
+                justify-content: space-evenly
+
+        &__telephone
+            &__container
+                display: flex
+                justify-content: center
+                align-items: center
+            img
+                height: 30px
+                margin: 0
+                padding: 0
+
+            a
+                white-space: nowrap
+                font-weight: bold
+                font-size: 20px
+                padding: 0
+                margin: 0 0 0 15px
+
+    &__content
+        padding: 100px 11vw
+        position: relative
+        z-index: 100
+
+        h2
+            width: 646px
+            color: #2c3039
+            font-size: 60px
+            line-height: 57px
+            font-weight: bold
+
+        h3
+            margin: 25px 0
+            color: #5e5e5e
+
+        .cta-button
+            margin: 0 0 25px 0
+
+        ul.header__ul
+            margin: 0
+            padding: 0
+            li
+                font-size: 20px
+                font-weight: 500
+                display: flex
+                align-items: center
+                &::before
+                    content: ""
+                    display: inline-block
+                    margin-right: 10px
+                    width: 20px
+                    height: 20px
+                    background-image: url("../icons/li.svg")
+                    background-size: contain
+                    background-position: center
+                    background-repeat: no-repeat
+
+    .header__truck-img
+        position: absolute
+        bottom: 100px
+        right: 12vw
+        width: 55vw
+
+.info
+    background: $darkBlue
+    color: #fff
+    padding: 11vh 11vw
+
+    h2
+        font-weight: bold
+        font-size: 60px
+
+    h3
+        font-size: 18px
+        font-weight: 300
+
+    &__first-ul
+        margin: 100px 0 0 0
+        padding: 0
+        display: flex
+        align-items: center
+        flex-wrap: wrap
+        width: 100%
+        li
+            width: 45%
+            display: flex
+            align-items: center
+            margin: 0 10px 25px 0
+            min-height: 80px
+            padding: 15px
+            background: #595959
+            border-radius: 15px
+            .li__icon
+                margin: 0 15px 0 0
+                img
+                    height: 40px
+
+            h4
+                font-size: 18px
+
+            h5
+                font-size: 14px
+
+            &:last-child
+                margin: 0px auto
+
+.numbers
+    background: $darkBlue
+    display: flex
+    justify-content: space-evenly
+    align-items: center
+    color: #f1f1f1
+    padding: 20px 0 50px
+
+    &__item
+        margin: 0 15px
+        display: flex
+        flex-direction: column
+        align-items: center
+        h2
+            font-size: 55px
+            color: $yellow
+            margin: 0 0 15px 0
+            font-weight: bold
+
+        .hr
+            width: 140%
+            height: 1px
+            background: #fff
+            display: block
+
+        h3
+            font-size: 20px
+            margin: 15px 0 0 0
+            font-weight: 300
+
+.details
+    background: $darkBlue
+    padding: 10vh 11vw
+    &__header
+        border-left: 3px solid #fff
+        padding: 5px 20px
+        color: #f1f1f1
+
+        h2
+            font-weight: bold
+            font-size: 40px
+
+        h3
+            font-size: 15px
+            font-weight: 400
+
+    &__container
+        margin: 30px 0 0 0
+        color: #fff
+        display: flex
+
+    &__item
+        width: 25%
+        border: 1px solid #ccc
+        display: flex
+        flex-direction: column
+        justify-content: start
+        padding: 15px
+        min-height: 500px
+        &:not(:last-child)
+            margin: 0 15px 0 0
+
+    &__image
+        width: 100%
+        img
+            width: 100%
+            object-fit: contain
+
+    h4
+        font-size: 23px
+        margin: 10px 0
+
+    h5
+        font-size: 15px
+        font-weight: 300
+        line-height: 22px
+
+.catalog
+    color: $darkBlue
+    padding: 10vh 11vw
+
+    h2
+        font-size: 65px
+        font-weight: bold
+        margin: 0
+        padding: 0
+
+    h3
+        font-weight: 400
+        font-size: 17px
+        line-height: 26px
+        margin: 15px 0 0 0
+        padding: 0
+
+    &__container
+        margin: 30px 0 0 0
+        display: flex
+        flex-wrap: wrap
+
+    &__item
+        width: 100%
+        min-height: 300px
+        background: $darkBlue
+        margin: 15px
+        display: flex
+        align-items: center
+        justify-content: space-between
+        padding: 0 30px
+        color: #fff
+        .item
+            &__info
+                width: 60%
+
+            &__name
+                font-weight: bold
+                font-size: 28px
+
+            &__text
+                margin: 20px 0
+                color: #ccc
+
+            &__image
+                width: 40%
+                display: flex
+                justify-content: center
+                align-items: center
+
+                img
+                    width: 70%

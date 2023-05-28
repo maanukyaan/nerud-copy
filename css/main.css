@@ -1,0 +1,327 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  min-width: 100%;
+  font-family: "Jost", sans-serif;
+}
+html ul, body ul {
+  list-style-type: none;
+}
+html a, body a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+  display: block;
+}
+html a:hover, body a:hover {
+  color: #ffda00;
+}
+html .cta-button, body .cta-button {
+  color: #2c3039;
+  font-size: 16px;
+  font-family: "Jost", Arial, sans-serif;
+  line-height: 1.55;
+  font-weight: 500;
+  border-width: 2px;
+  border-radius: 0px;
+  min-width: 100px;
+  max-width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  padding: 13px 35px;
+  background-color: #ffda00;
+  background-position: center center;
+  border-color: #2c3039;
+  border-style: solid;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+html .cta-button:hover, body .cta-button:hover {
+  color: #000;
+  background: #fff;
+}
+
+.header {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.9)), url("../img/header/header_bg.png");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.header .nav {
+  background: #fff;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.header .nav__main-ul {
+  margin: 0;
+  padding: 10px 11vw;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .nav__logo img {
+  height: 60px;
+}
+.header .nav__links {
+  width: 50%;
+}
+.header .nav__links ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.header .nav__telephone__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .nav__telephone img {
+  height: 30px;
+  margin: 0;
+  padding: 0;
+}
+.header .nav__telephone a {
+  white-space: nowrap;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 0;
+  margin: 0 0 0 15px;
+}
+.header__content {
+  padding: 100px 11vw;
+  position: relative;
+  z-index: 100;
+}
+.header__content h2 {
+  width: 646px;
+  color: #2c3039;
+  font-size: 60px;
+  line-height: 57px;
+  font-weight: bold;
+}
+.header__content h3 {
+  margin: 25px 0;
+  color: #5e5e5e;
+}
+.header__content .cta-button {
+  margin: 0 0 25px 0;
+}
+.header__content ul.header__ul {
+  margin: 0;
+  padding: 0;
+}
+.header__content ul.header__ul li {
+  font-size: 20px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+.header__content ul.header__ul li::before {
+  content: "";
+  display: inline-block;
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  background-image: url("../icons/li.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.header .header__truck-img {
+  position: absolute;
+  bottom: 100px;
+  right: 12vw;
+  width: 55vw;
+}
+
+.info {
+  background: #2C3039;
+  color: #fff;
+  padding: 11vh 11vw;
+}
+.info h2 {
+  font-weight: bold;
+  font-size: 60px;
+}
+.info h3 {
+  font-size: 18px;
+  font-weight: 300;
+}
+.info__first-ul {
+  margin: 100px 0 0 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.info__first-ul li {
+  width: 45%;
+  display: flex;
+  align-items: center;
+  margin: 0 10px 25px 0;
+  min-height: 80px;
+  padding: 15px;
+  background: #595959;
+  border-radius: 15px;
+}
+.info__first-ul li .li__icon {
+  margin: 0 15px 0 0;
+}
+.info__first-ul li .li__icon img {
+  height: 40px;
+}
+.info__first-ul li h4 {
+  font-size: 18px;
+}
+.info__first-ul li h5 {
+  font-size: 14px;
+}
+.info__first-ul li:last-child {
+  margin: 0px auto;
+}
+
+.numbers {
+  background: #2C3039;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #f1f1f1;
+  padding: 20px 0 50px;
+}
+.numbers__item {
+  margin: 0 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.numbers__item h2 {
+  font-size: 55px;
+  color: #ffda00;
+  margin: 0 0 15px 0;
+  font-weight: bold;
+}
+.numbers__item .hr {
+  width: 140%;
+  height: 1px;
+  background: #fff;
+  display: block;
+}
+.numbers__item h3 {
+  font-size: 20px;
+  margin: 15px 0 0 0;
+  font-weight: 300;
+}
+
+.details {
+  background: #2C3039;
+  padding: 10vh 11vw;
+}
+.details__header {
+  border-left: 3px solid #fff;
+  padding: 5px 20px;
+  color: #f1f1f1;
+}
+.details__header h2 {
+  font-weight: bold;
+  font-size: 40px;
+}
+.details__header h3 {
+  font-size: 15px;
+  font-weight: 400;
+}
+.details__container {
+  margin: 30px 0 0 0;
+  color: #fff;
+  display: flex;
+}
+.details__item {
+  width: 25%;
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding: 15px;
+  min-height: 500px;
+}
+.details__item:not(:last-child) {
+  margin: 0 15px 0 0;
+}
+.details__image {
+  width: 100%;
+}
+.details__image img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.details h4 {
+  font-size: 23px;
+  margin: 10px 0;
+}
+.details h5 {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 22px;
+}
+
+.catalog {
+  color: #2C3039;
+  padding: 10vh 11vw;
+}
+.catalog h2 {
+  font-size: 65px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+.catalog h3 {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 26px;
+  margin: 15px 0 0 0;
+  padding: 0;
+}
+.catalog__container {
+  margin: 30px 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.catalog__item {
+  width: 100%;
+  min-height: 300px;
+  background: #2C3039;
+  margin: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  color: #fff;
+}
+.catalog__item .item__info {
+  width: 60%;
+}
+.catalog__item .item__name {
+  font-weight: bold;
+  font-size: 28px;
+}
+.catalog__item .item__text {
+  margin: 20px 0;
+  color: #ccc;
+}
+.catalog__item .item__image {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.catalog__item .item__image img {
+  width: 70%;
+}/*# sourceMappingURL=main.css.map */
