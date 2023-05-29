@@ -427,23 +427,179 @@
             placeholder="Вес в тоннах (мин от 30)"
           />
           <input type="date" id="dataInput" placeholder="Дата поставки" />
-          <input
-            type="text"
-            id="adressInput"
-            placeholder="Адрес доставки"
-          />
+          <input type="text" id="adressInput" placeholder="Адрес доставки" />
           <input
             type="number"
             id="telephoneInput"
             placeholder="+71234567890"
+            required
           />
-          <input
-            type="text"
-            id="nameInput"
-            placeholder="Имя"
-          />
+          <input type="text" id="nameInput" placeholder="Имя" />
           <button type="submit">Отправить</button>
         </form>
+      </div>
+    </section>
+
+    <section class="section opinions">
+      <h2>Что о нас говорят наши клиенты</h2>
+      <h3>
+        За годы работы у нас накопилось немало благодарностей от наших клиентов
+        среди которых были — муниципальные учреждения, дед сады и школы,
+        спортивные комплексы, федеральные дороги такие как Пермь - Екатеринбург
+        и Чусовской мост.
+      </h3>
+
+      <div class="opinions__container">
+        <div class="opinion">
+          <div class="opinion__image">
+            <img src="img/opinions/1.png" alt="Opinion" />
+          </div>
+          <div class="opinion__info">
+            <div class="opinion__type">Благодарность</div>
+            <div class="opinion__source">ООО "СФ Славянский дом"</div>
+            <div class="opinion__text">
+              Благодарность за своевременную поставку нерудных материалов и
+              оперативное реагирование на заявки.
+            </div>
+          </div>
+        </div>
+
+        <div class="opinion">
+          <div class="opinion__image">
+            <img src="img/opinions/2.png" alt="Opinion" />
+          </div>
+          <div class="opinion__info">
+            <div class="opinion__type">Благодарственное письмо</div>
+            <div class="opinion__source">АНО ЦСП "Надежда"</div>
+            <div class="opinion__text">
+              За оказанную благотворительную помощь и небезразличие к социальным
+              проблемам общества.
+            </div>
+          </div>
+        </div>
+
+        <div class="opinion">
+          <div class="opinion__image">
+            <img src="img/opinions/3.jpg" alt="Opinion" />
+          </div>
+          <div class="opinion__info">
+            <div class="opinion__type">Благодарность</div>
+            <div class="opinion__source">"СФ "Унибой" Пермского края"</div>
+            <div class="opinion__text">
+              За солидарность в решении важнейших вопросов по оздоровлению,
+              воспитанию и полезной занятости подрастающего поколения.
+            </div>
+          </div>
+        </div>
+
+        <div class="opinion">
+          <div class="opinion__image">
+            <img src="img/opinions/4.png" alt="Opinion" />
+          </div>
+          <div class="opinion__info">
+            <div class="opinion__type">Благодарственное письмо</div>
+            <div class="opinion__source">АНО ЦСП "Надежда"</div>
+            <div class="opinion__text">
+              За оказанную благотворительную помощь и небезразличие к проблемам
+              общества.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section clients">
+      <h2>Среди наших клиентов были</h2>
+      <div class="clients__container">
+        <div class="client">
+          <img src="img/clients/lukoyl.png" alt="lukoyl" />
+        </div>
+        <div class="client">
+          <img src="img/clients/uralkaliy.png" alt="uralkaliy" />
+        </div>
+        <div class="client">
+          <img src="img/clients/evroxim.png" alt="evroxim" />
+        </div>
+        <div class="client">
+          <img src="img/clients/nadejda.png" alt="nadejda" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section consultation">
+      <div class="telephone">
+        <img src="img/consultation/telephone.png" alt="telephone" />
+      </div>
+      <div class="consultation__info">
+        <h2>
+          Запишитесь на <br />
+          консультацию
+        </h2>
+        <h3>
+          Оставьте ваш номер телефона, и мы сами <br />
+          перезвоним вам в течении 5 минут
+        </h3>
+        <form action="send_consultation.php" id="consultationForm">
+          <h4>
+            <b>Заполните форму ниже,</b> чтобы записаться на консультацию.
+            <br />
+            Вам перезвонит менеджер, чтобы назначить время
+          </h4>
+          <div class="form__wrapper">
+            <input
+              type="number"
+              id="consultationTelephoneInput"
+              placeholder="+71234567890"
+              required
+            />
+            <button type="submit">Отправить</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="section workers">
+      <h2>Кто будет с Вами работать</h2>
+      <div class="workers__container">
+        <div class="worker">
+          <div class="worker__image">
+            <img src="img/workers/1.jpg" alt="Worker" />
+          </div>
+          <div class="worker__info">
+            <div class="worker__name">Петухов Егор Сергеевич</div>
+            <div class="worker__status">Руководитель отдела продаж</div>
+          </div>
+        </div>
+
+        <div class="worker">
+          <div class="worker__image">
+            <img src="img/workers/2.jpg" alt="Worker" />
+          </div>
+          <div class="worker__info">
+            <div class="worker__name">Прокопенко Павел Павлович</div>
+            <div class="worker__status">Коммерческий директор</div>
+          </div>
+        </div>
+
+        <div class="worker">
+          <div class="worker__image">
+            <img src="img/workers/3.jpg" alt="Worker" />
+          </div>
+          <div class="worker__info">
+            <div class="worker__name">Кипин Михаил Александрович</div>
+            <div class="worker__status">Менеджер</div>
+          </div>
+        </div>
+
+        <div class="worker">
+          <div class="worker__image">
+            <img src="img/workers/4.jpg" alt="Worker" />
+          </div>
+          <div class="worker__info">
+            <div class="worker__name">Кожина Анастасия Ивановна</div>
+            <div class="worker__status">Офис-менеджер</div>
+          </div>
+        </div>
       </div>
     </section>
   </body>
