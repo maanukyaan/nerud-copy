@@ -8,6 +8,7 @@ html, body
     min-height: 100%
     min-width: 100%
     font-family: 'Jost', sans-serif
+    overflow-x: hidden
 
     ul
         list-style-type: none
@@ -52,6 +53,11 @@ html, body
 
     input[type=number]
         -moz-appearance: textfield
+
+    .tire
+        position: absolute
+        top: -35px
+        left: 0
 
 .header
     width: 100%
@@ -151,6 +157,7 @@ html, body
     background: $darkBlue
     color: #fff
     padding: 11vh 11vw
+    position: relative
 
     h2
         font-weight: bold
@@ -577,7 +584,7 @@ html, body
         .worker
             width: 45%
             margin: 20px
-            box-shadow: 4px 4px 10px 3px rgba(34, 60, 80, 0.11)
+            box-shadow: 4px 4px 10px 3px rgba(34, 60, 80, 0.11 )
             display: flex
             align-items: center
             padding: 40px
@@ -602,3 +609,100 @@ html, body
             &__status
                 font-weight: 500
                 font-size: 13px
+
+.offer
+    padding: 10vh 11vw
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    h2
+        font-size: 55px
+        font-weight: bold
+        text-align: center
+
+    h3
+        text-align: center
+        font-size: 16px
+
+    form
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        padding: 30px 50px
+        box-shadow: 2px 6px 10px 6px rgba(34, 60, 80, 0.21)
+        border-radius: 7px
+        margin: 20px 0 0 0
+        min-width: 700px
+
+        input
+            border: none
+            outline: none
+            border-bottom: 1px solid #000
+            background: inherit
+            width: 90%
+            margin: 20px 0
+
+        button
+            border: none
+            color: $darkBlue
+            background: $yellow
+            width: 90%
+            padding: 10px 0
+            margin-top: 15px
+
+.footer
+    position: relative
+    background: $darkBlue
+    padding: 100px 11vw
+    min-height: 300px
+    color: #fff
+    display: flex
+    flex-direction: column
+    justify-content: center
+
+    h2
+        font-size: 55px
+        font-weight: bold
+        text-align: left
+
+    h3
+        font-size: 18px
+        text-align: justify
+        font-weight: 400
+
+    &__container
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+
+    &__info
+        width: 50%
+        ul
+            display: flex
+            flex-direction: column
+            padding: 30px 0 0 0
+            li
+                display: flex
+                align-items: center
+                margin: 0 0 20px 0
+                img
+                    width: 55px
+                    border: 2px solid $yellow
+                    padding: 15px
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    margin: 0 15px 0 0
+
+                h4
+                    font-size: 16px
+                    font-weight: 500
+                    margin: 0
+
+    &__map
+        width: 45%
+        min-width: 500px
+        height: 100%
+        min-height: 300px
