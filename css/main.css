@@ -60,7 +60,7 @@ html .tire, body .tire {
 
 .header {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.9)), url("../img/header/header_bg.png");
   background-position: center;
   background-size: cover;
@@ -201,9 +201,6 @@ html .tire, body .tire {
 .info__first-ul li h5 {
   font-size: 14px;
 }
-.info__first-ul li:last-child {
-  margin: 0px auto;
-}
 
 .numbers {
   background: #2C3039;
@@ -276,6 +273,7 @@ html .tire, body .tire {
 }
 .details__image img {
   width: 100%;
+  height: 300px;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -530,6 +528,7 @@ html .tire, body .tire {
 }
 .clients__container .client {
   max-width: 25%;
+  height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -560,6 +559,10 @@ html .tire, body .tire {
 }
 .consultation__info {
   align-self: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 40px 0;
   width: 100%;
 }
@@ -576,7 +579,7 @@ html .tire, body .tire {
 .consultation__info form {
   background: #fff;
   padding: 50px;
-  width: 100%;
+  min-width: 50%;
   border-radius: 10px;
   margin: 25px 0;
 }
@@ -762,6 +765,8 @@ html .tire, body .tire {
 }
 .footer__footer {
   padding: 100px 0 10px 0;
+  display: flex;
+  justify-content: space-between;
 }
 .footer__footer__left {
   width: 35vw;
@@ -788,4 +793,39 @@ html .tire, body .tire {
   height: 100%;
   display: flex;
   flex-direction: column;
+}
+.footer__footer .footer__menu ul h3 {
+  color: #ccc;
+  font-size: 12px;
+  letter-spacing: 3px;
+}
+.footer__footer .footer__menu ul a {
+  font-size: 12px;
+  font-weight: bold;
+  margin: 5px 0;
+}
+.footer__footer__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+.footer__footer__right a {
+  font-size: 35px;
+  font-weight: bold;
+}
+.footer__footer__right button {
+  border: 2px solid #ffda00;
+  outline: none;
+  background: transparent;
+  color: #fff;
+  padding: 10px 0;
+  width: 100%;
+  margin: 10px 0 0 0;
+  transition: 0.2s all ease;
+  font-weight: bold;
+}
+.footer__footer__right button:hover {
+  background: #ffda00;
+  color: #2C3039;
 }/*# sourceMappingURL=main.css.map */
