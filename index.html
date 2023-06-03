@@ -26,7 +26,6 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <!-- https://nerudtransstroy.ru -->
 
     <header class="header">
       <nav class="nav">
@@ -34,17 +33,17 @@
           <li class="nav__logo">
             <div class="nav__logo__container">
               <a href="index.html"
-                ><img src="img/header/logo.svg" alt="Logo"
+                ><img src="img/header/logo.png" alt="Logo"
               /></a>
             </div>
           </li>
           <li class="nav__links">
             <ul>
-              <li><a href="#">О нас</a></li>
-              <li><a href="#">Услуги</a></li>
-              <li><a href="#">Стоимость</a></li>
-              <li><a href="#">Консультация</a></li>
-              <li><a href="#">Контакты</a></li>
+              <li><a href="#info" data-scroll>О нас</a></li>
+              <li><a href="#catalog" data-scroll>Услуги</a></li>
+              <li><a href="#price" data-scroll>Стоимость</a></li>
+              <li><a href="#consultation" data-scroll>Консультация</a></li>
+              <li><a href="#footer" data-scroll>Контакты</a></li>
             </ul>
           </li>
           <li class="nav__telephone">
@@ -79,7 +78,7 @@
       />
     </header>
 
-    <section class="section info">
+    <section class="section info" id="info">
       <h2 class="text-center">Комплекс услуг</h2>
       <h3 class="text-center">
         Мы, компания ООО "СТК"Элис" более 15 лет занимаемся строительными
@@ -245,7 +244,7 @@
       </div>
     </section>
 
-    <section class="section catalog">
+    <section class="section catalog" id="catalog">
       <h2 class="text-center">Каталог продукции</h2>
       <h3 class="text-center">
         Мы поставляем нерудные материалы и спецтехнику. Компания "СТК"Элис"
@@ -330,7 +329,7 @@
       </div>
     </section>
 
-    <section class="section price">
+    <section class="section price" id="price">
       <div class="price__block">
         <h2>Стоимость щебня</h2>
         <h3>
@@ -631,7 +630,7 @@
       </div>
     </section>
 
-    <section class="section consultation">
+    <section class="section consultation" id="consultation">
       <!-- <div class="telephone">
         <img src="img/consultation/telephone.png" alt="telephone" />
       </div> -->
@@ -733,7 +732,7 @@
       </form>
     </section>
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
       <h2>Мы работаем по Санкт-Петербургу и Ленинградской области</h2>
       <h3>
         Наша компания специализируется на продаже и поставке сыпучих
@@ -748,7 +747,7 @@
           <ul>
             <li class="footer__info__item">
               <img src="icons/footer_location.svg" alt="Footer location" />
-              <h4>г. Санкт-Петербург, ул. Смолячкова 19 лит. А, офис 706</h4>
+              <h4>г. Санкт-Петербург, ул. Смолячкова 19, лит. А, офис 706</h4>
             </li>
             <li class="footer__info__item">
               <img src="icons/footer_telephone.svg" alt="Footer telephone" />
@@ -782,7 +781,7 @@
       <div class="footer__footer">
         <div class="footer__footer__left">
           <div class="footer__footer__logo">
-            <img src="img/footer/logo.svg" alt="Logo" />
+            <img src="img/footer/logo.png" alt="Logo" />
             <a href="index.html">© 2023 ООО "СТК"Элис"</a>
           </div>
           <div class="footer__menu">
@@ -804,6 +803,22 @@
       <div class="tire"><img src="img/footer/tire.svg" alt="Tire" /></div>
     </footer>
 
+    <!-- Smooth scroll through anchors library -->
+    <script src="https://unpkg.com/sweet-scroll/sweet-scroll.min.js"></script>
+
+    <!-- Init Sweet Scroll library -->
+    <script>
+      document.addEventListener(
+        "DOMContentLoaded",
+        () => {
+          const scroller = new SweetScroll({
+            easing: easeInOutQuad,
+          });
+        },
+        false
+      );
+    </script>
+
     <!-- Yandex.Maps API -->
     <script
       src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"
@@ -814,10 +829,27 @@
     <script>
       ymaps.ready(init);
       function init() {
-        var myMap = new ymaps.Map("map", {
-          center: [55.76, 37.64],
-          zoom: 7,
+        // Создание карты.
+        let myMap = new ymaps.Map("map", {
+          center: [59.970643, 30.346752],
+          zoom: 16,
         });
+
+        let placemark = new ymaps.Placemark(
+          [59.970643, 30.346752],
+          {
+            hintContent:
+              "г.Санкт - Петербург,<br> ул.Смолячкова 19,<br> лит.А, офис 706",
+          },
+          {
+            iconLayout: "default#image",
+            iconImageHref:
+              "https://pngicon.ru/file/uploads/geometka-128x128.png",
+            iconImageSize: [40, 40],
+            iconImageOffset: [-32, -32],
+          }
+        );
+        myMap.geoObjects.add(placemark);
       }
     </script>
   </body>
