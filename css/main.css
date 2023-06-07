@@ -376,6 +376,12 @@ html .tire, body .tire {
   padding: 30px 40px;
   margin: 30px 0 0 0;
 }
+.price__item__amount {
+  text-align: left;
+}
+.price__item__amount-price {
+  text-align: right;
+}
 .price__item__name {
   color: #ffda00;
   font-weight: 500;
@@ -585,6 +591,7 @@ html .tire, body .tire {
   background: #fff;
   padding: 50px;
   min-width: 50%;
+  max-width: 100%;
   border-radius: 10px;
   margin: 25px 0;
 }
@@ -833,4 +840,161 @@ html .tire, body .tire {
 .footer__footer__right button:hover {
   background: #ffda00;
   color: #2C3039;
+}
+
+@media screen and (max-width: 1000px) {
+  body > section, body footer {
+    padding-left: 3vw !important;
+    padding-right: 3vw !important;
+  }
+  .nav__links {
+    display: none;
+  }
+  .header .header__truck-img {
+    display: none;
+  }
+  .header__content h2 {
+    width: inherit;
+    font-size: 40px;
+    line-height: inherit;
+  }
+  .info__first-ul {
+    align-items: inherit;
+  }
+  .info__first-ul li {
+    margin: 10px auto;
+  }
+  .numbers__item h2 {
+    font-size: 27px;
+  }
+  .numbers__item .hr {
+    width: 100%;
+  }
+  .numbers__item h3 {
+    font-size: 14px;
+  }
+  .price__item {
+    width: 90%;
+  }
+  .cost-delivery__container {
+    align-items: center;
+  }
+  .cost-delivery__container .truck-image {
+    width: 35%;
+  }
+  .cost-delivery__container form {
+    width: 60%;
+  }
+  .footer__container {
+    flex-direction: column;
+    align-items: inherit;
+  }
+  .footer__container #map {
+    width: 100%;
+  }
+  .footer__container .footer__info {
+    width: 100%;
+  }
+  .footer__container .footer__info ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .footer__container .footer__info ul li:not(:first-child) {
+    width: 50%;
+  }
+  .footer__footer {
+    flex-direction: column;
+  }
+  .footer__footer__left {
+    width: 100%;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .info__first-ul {
+    flex-direction: column;
+  }
+  .info__first-ul li {
+    width: 95%;
+  }
+  .numbers {
+    flex-direction: column;
+  }
+  .numbers__item {
+    width: 100%;
+    font-size: 25px;
+    margin: 0 0 50px 0 !important;
+  }
+  .details__container {
+    flex-direction: column;
+  }
+  .details__item {
+    width: 100%;
+    margin: 0 0 30px 0 !important;
+    text-align: center;
+  }
+  .details__image img {
+    width: 100%;
+    height: 365px;
+  }
+  .catalog__item {
+    flex-direction: column;
+    padding: 30px;
+  }
+  .catalog__item > * {
+    width: 95% !important;
+  }
+  .catalog__item .item__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .catalog__item .item__name {
+    white-space: nowrap;
+  }
+  .catalog__item .item__image {
+    margin: 20px 0 0 0;
+  }
+  .price h2, .price h3 {
+    text-align: center;
+  }
+  .price__item__amount {
+    font-size: 20px;
+  }
+  .price__item__amount-price {
+    font-size: 20px;
+  }
+  .cost-delivery .truck-image {
+    display: none;
+  }
+  .cost-delivery form {
+    width: 100%;
+  }
+  .consultation {
+    height: inherit;
+  }
+  .consultation .form__wrapper {
+    flex-direction: column;
+  }
+  .consultation .form__wrapper button {
+    margin: 20px 0 0 0 !important;
+    width: 250px;
+  }
+  .offer form {
+    min-width: inherit;
+    width: 100%;
+  }
+  .footer h2 {
+    font-size: 30px;
+  }
+  .footer h3 {
+    font-size: 14px;
+  }
+  .footer ul {
+    padding-left: 0 !important;
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -360,6 +360,12 @@ html, body
         padding: 30px 40px
         margin: 30px 0 0 0
 
+        &__amount
+            text-align: left
+
+            &-price
+                text-align: right
+
         &__name
             color: $yellow
             font-weight: 500
@@ -512,6 +518,7 @@ html, body
             &:hover
                 img
                     transform: scale(1.3)
+
 .consultation
     background: $yellow
     padding: 0 11vw 0
@@ -549,6 +556,7 @@ html, body
             background: #fff
             padding: 50px
             min-width: 50%
+            max-width: 100%
             border-radius: 10px
             margin: 25px 0
             h4
@@ -780,3 +788,163 @@ html, body
                 &:hover
                     background: $yellow
                     color: $darkBlue
+
+@media screen and ( max-width: 1000px )
+    body
+        & > section, footer
+            padding-left: 3vw !important
+            padding-right: 3vw !important
+
+    .nav__links
+        display: none
+
+    .header .header__truck-img
+        display: none
+
+    .header__content h2
+        width: inherit
+        font-size: 40px
+        line-height: inherit
+
+    .info__first-ul
+        align-items: inherit
+        li
+            margin: 10px auto
+
+    .numbers__item
+        h2
+            font-size: 27px
+
+        .hr
+            width: 100%
+
+        h3
+            font-size: 14px
+
+    .price__item
+        width: 90%
+
+    .cost-delivery__container
+        align-items: center
+
+        .truck-image
+            width: 35%
+
+        form
+            width: 60%
+
+    .footer__container
+        flex-direction: column
+        align-items: inherit
+        #map
+            width: 100%
+
+        .footer__info
+            width: 100%
+            ul
+                flex-direction: row
+                flex-wrap: wrap
+                width: 100%
+                li
+                    &:not(:first-child)
+                        width: 50%
+
+    .footer__footer
+        flex-direction: column
+
+        &__left
+            width: 100%
+            justify-content: space-evenly
+            margin-bottom: 40px
+
+@media screen and ( max-width: 600px )
+
+    .info__first-ul
+        flex-direction: column
+
+        li
+            width: 95%
+
+    .numbers
+        flex-direction: column
+        &__item
+            width: 100%
+            font-size: 25px
+            margin: 0 0 50px 0 !important
+
+    .details
+        &__container
+            flex-direction: column
+
+        &__item
+            width: 100%
+            margin: 0 0 30px 0 !important
+            text-align: center
+
+        &__image
+            img
+                width: 100%
+                height: 365px
+
+    .catalog
+        &__item
+            flex-direction: column
+            padding: 30px
+
+            & > *
+                width: 95% !important
+
+            .item
+                &__info
+                    display: flex
+                    flex-direction: column
+                    justify-content: center
+                    align-items: center
+                    text-align: center
+
+                &__name
+                    white-space: nowrap
+
+                &__image
+                    margin: 20px 0 0 0
+
+    .price
+        h2, h3
+            text-align: center
+
+        &__item__amount
+            font-size: 20px
+            &-price
+                font-size: 20px
+
+    .cost-delivery
+        .truck-image
+            display: none
+
+        form
+            width: 100%
+
+    .consultation
+        height: inherit
+
+        .form__wrapper
+            flex-direction: column
+
+            button
+                margin: 20px 0 0 0 !important
+                width: 250px
+
+    .offer
+        form
+            min-width: inherit
+            width: 100%
+
+    .footer
+        h2
+            font-size: 30px
+
+        h3
+            font-size: 14px
+
+        ul
+            padding-left: 0 !important
