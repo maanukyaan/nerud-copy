@@ -54,8 +54,12 @@ html input[type=number], body input[type=number] {
 }
 html .tire, body .tire {
   position: absolute;
-  top: -35px;
+  top: -15px;
   left: 0;
+  width: 100%;
+}
+html .tire img, body .tire img {
+  width: 100vw;
 }
 
 .header {
@@ -367,7 +371,7 @@ html .tire, body .tire {
 }
 .price__item {
   background: #2C3039;
-  min-height: 340px;
+  min-height: 300px;
   width: 900px;
   color: #fff;
   display: flex;
@@ -913,11 +917,31 @@ html .tire, body .tire {
   }
 }
 @media screen and (max-width: 600px) {
+  .header .nav__main-ul {
+    padding-left: 3vw;
+    padding-right: 3vw;
+  }
+  .header__content h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .header__content h3 {
+    font-size: 20px;
+  }
+  .header__content ul.header__ul li {
+    font-size: 17px;
+  }
   .info__first-ul {
     flex-direction: column;
   }
   .info__first-ul li {
     width: 95%;
+  }
+  .info__first-ul li .li__icon {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .numbers {
     flex-direction: column;
@@ -926,6 +950,12 @@ html .tire, body .tire {
     width: 100%;
     font-size: 25px;
     margin: 0 0 50px 0 !important;
+  }
+  .numbers__item .hr {
+    width: 70%;
+  }
+  .details__header h2 {
+    font-size: 35px;
   }
   .details__container {
     flex-direction: column;
@@ -937,7 +967,7 @@ html .tire, body .tire {
   }
   .details__image img {
     width: 100%;
-    height: 365px;
+    height: 350px;
   }
   .catalog__item {
     flex-direction: column;
@@ -954,7 +984,7 @@ html .tire, body .tire {
     text-align: center;
   }
   .catalog__item .item__name {
-    white-space: nowrap;
+    font-size: 23px;
   }
   .catalog__item .item__image {
     margin: 20px 0 0 0;
@@ -962,11 +992,25 @@ html .tire, body .tire {
   .price h2, .price h3 {
     text-align: center;
   }
+  .price h2:not(:first-child) {
+    font-size: 30px;
+  }
+  .price h3:not(:first-child) {
+    font-size: 14px;
+  }
+  .price__item {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .price__item__name {
+    text-align: center;
+  }
   .price__item__amount {
-    font-size: 20px;
+    font-size: 17px;
+    font-weight: normal;
   }
   .price__item__amount-price {
-    font-size: 20px;
+    font-size: 16px;
   }
   .cost-delivery .truck-image {
     display: none;
@@ -996,5 +1040,8 @@ html .tire, body .tire {
   }
   .footer ul {
     padding-left: 0 !important;
+  }
+  .footer .footer__container .footer__info ul li {
+    width: 100%;
   }
 }/*# sourceMappingURL=main.css.map */

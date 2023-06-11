@@ -56,8 +56,11 @@ html, body
 
     .tire
         position: absolute
-        top: -35px
+        top: -15px
         left: 0
+        width: 100%
+        img
+            width: 100vw
 
 .header
     width: 100%
@@ -351,7 +354,7 @@ html, body
 
     &__item
         background: $darkBlue
-        min-height: 340px
+        min-height: 300px
         width: 900px
         color: #fff
         display: flex
@@ -858,12 +861,32 @@ html, body
             margin-bottom: 40px
 
 @media screen and ( max-width: 600px )
+    .header .nav__main-ul
+        padding-left: 3vw
+        padding-right: 3vw
+
+    .header__content
+        h2
+            font-size: 30px
+            line-height: 40px
+
+        h3
+            font-size: 20px
+
+        ul.header__ul li
+            font-size: 17px
 
     .info__first-ul
         flex-direction: column
 
         li
             width: 95%
+
+            .li__icon
+                width: 20%
+                display: flex
+                justify-content: center
+                align-items: center
 
     .numbers
         flex-direction: column
@@ -872,7 +895,14 @@ html, body
             font-size: 25px
             margin: 0 0 50px 0 !important
 
+            .hr
+                width: 70%
+
     .details
+        &__header
+            h2
+                font-size: 35px
+
         &__container
             flex-direction: column
 
@@ -884,7 +914,7 @@ html, body
         &__image
             img
                 width: 100%
-                height: 365px
+                height: 350px
 
     .catalog
         &__item
@@ -903,7 +933,7 @@ html, body
                     text-align: center
 
                 &__name
-                    white-space: nowrap
+                    font-size: 23px
 
                 &__image
                     margin: 20px 0 0 0
@@ -912,10 +942,23 @@ html, body
         h2, h3
             text-align: center
 
-        &__item__amount
-            font-size: 20px
-            &-price
-                font-size: 20px
+        h2:not(:first-child)
+            font-size: 30px
+
+        h3:not(:first-child)
+            font-size: 14px
+
+        &__item
+            padding-left: 15px
+            padding-right: 15px
+            &__name
+                text-align: center
+
+            &__amount
+                font-size: 17px
+                font-weight: normal
+                &-price
+                    font-size: 16px
 
     .cost-delivery
         .truck-image
@@ -948,3 +991,6 @@ html, body
 
         ul
             padding-left: 0 !important
+
+        .footer__container .footer__info ul li
+            width: 100%
