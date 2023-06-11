@@ -116,7 +116,6 @@ html .tire img, body .tire img {
 .header__content {
   padding: 100px 11vw;
   position: relative;
-  z-index: 100;
 }
 .header__content h2 {
   width: 646px;
@@ -846,6 +845,84 @@ html .tire img, body .tire img {
   color: #2C3039;
 }
 
+.modal__wrapper {
+  opacity: 0;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: all 0.3s ease;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal__wrapper.active {
+  opacity: 1;
+  pointer-events: all;
+}
+.modal__wrapper .close-modal {
+  position: absolute;
+  z-index: 101;
+  right: 25px;
+  top: 25px;
+  cursor: pointer;
+}
+.modal__wrapper .close-modal img {
+  width: 40px;
+}
+.modal__content {
+  color: #fff;
+  background: #2C3039;
+}
+.modal__content form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 40px;
+  width: 500px;
+}
+.modal__content h2 {
+  color: #ffda00;
+  font-weight: bold;
+}
+.modal__content h3 {
+  font-size: 15px;
+  text-align: center;
+}
+.modal__content input {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #fff;
+  background: inherit;
+  width: 100%;
+  margin: 20px 0;
+  padding-bottom: 15px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  caret-color: #fff;
+  color: #fff;
+}
+.modal__content input::-moz-placeholder {
+  font-weight: 500;
+  font-size: 17px;
+}
+.modal__content input::placeholder {
+  font-weight: 500;
+  font-size: 17px;
+}
+.modal__content button {
+  background: #ffda00;
+  border: none;
+  height: 60px;
+  width: 100%;
+  margin: 15px 0 0 0;
+}
+
 @media screen and (max-width: 1000px) {
   .tire {
     display: none;
@@ -1058,5 +1135,8 @@ html .tire img, body .tire img {
   }
   .footer .footer__container .footer__info ul li {
     width: 100%;
+  }
+  .modal__content form {
+    width: 90vw;
   }
 }/*# sourceMappingURL=main.css.map */
