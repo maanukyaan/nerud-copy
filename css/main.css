@@ -1021,6 +1021,18 @@ html .tire img, body .tire img {
   .cost-delivery form {
     width: 100%;
   }
+  .clients__container {
+    flex-wrap: wrap;
+  }
+  .clients__container .client {
+    width: 49%;
+    max-width: 100%;
+    height: 140px;
+    border-right: 0 !important;
+  }
+  .clients__container .client img {
+    width: 70%;
+  }
   .consultation {
     height: inherit;
   }
