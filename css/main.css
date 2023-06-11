@@ -847,6 +847,9 @@ html .tire img, body .tire img {
 }
 
 @media screen and (max-width: 1000px) {
+  .tire {
+    display: none;
+  }
   body > section, body footer {
     padding-left: 3vw !important;
     padding-right: 3vw !important;
