@@ -157,7 +157,7 @@
       </div>
     </section>
 
-    <section class="section details">
+    <section class="section details" id="technology">
       <div class="details__header">
         <h2>Немного о деталях</h2>
         <h3>
@@ -507,7 +507,7 @@
       </div>
     </section>
 
-    <section class="section cost-delivery">
+    <section class="section cost-delivery" id="costDelivery">
       <h2>Рассчитайте стоимость с доставкой</h2>
       <h3>
         Окончательная цена определяться при заключении договора и зависит от
@@ -517,7 +517,7 @@
         <div class="truck-image">
           <img src="img/cost-delivery/truck.png" alt="Truck" />
         </div>
-        <form action="/send.php">
+        <form action="cost_delivery.php" method="POST">
           <select name="select" id="firstSelect">
             <option value>Выберите продукцию</option>
             <option value="Щебень">Щебень</option>
@@ -531,16 +531,28 @@
             type="number"
             id="weightInput"
             placeholder="Вес в м³х (мин от 30)"
+            name="weight"
           />
-          <input type="date" id="dataInput" placeholder="Дата поставки" />
-          <input type="text" id="adressInput" placeholder="Адрес доставки" />
+          <input
+            type="date"
+            id="dataInput"
+            placeholder="Дата поставки"
+            name="date"
+          />
+          <input
+            type="text"
+            id="adressInput"
+            placeholder="Адрес доставки"
+            name="adress"
+          />
           <input
             type="number"
             id="telephoneInput"
             placeholder="+71234567890"
             required
+            name="telephone"
           />
-          <input type="text" id="nameInput" placeholder="Имя" />
+          <input type="text" id="nameInput" placeholder="Имя" name="name" />
           <button type="submit">Отправить</button>
         </form>
       </div>
@@ -555,7 +567,7 @@
         можно заполнив форму.
       </h3>
 
-      <form action="offer_send.php">
+      <form action="offer.php" method="POST">
         <h4>
           Заполните форму, чтобы получить <br />
           <b>коммерческое предложение</b>
@@ -565,8 +577,14 @@
           placeholder="Ваше имя"
           id="offerNameInput"
           required
+          name="name"
         />
-        <input type="number" placeholder="+71234567890" required />
+        <input
+          type="number"
+          placeholder="+71234567890"
+          required
+          name="telephone"
+        />
         <button type="submit">Получить КП</button>
       </form>
     </section>
@@ -626,16 +644,16 @@
           <div class="footer__menu">
             <ul>
               <li><h3>МЕНЮ САЙТА</h3></li>
-              <li><a href="#">Технология производства</a></li>
-              <li><a href="#">Виды услуг</a></li>
-              <li><a href="#">Расчет стоимости</a></li>
-              <li><a href="#">Консультация</a></li>
+              <li><a href="#technology">Технология производства</a></li>
+              <li><a href="#catalog">Виды услуг</a></li>
+              <li><a href="#costDelivery">Расчет стоимости</a></li>
+              <li><a href="#price">Цены</a></li>
             </ul>
           </div>
         </div>
         <div class="footer__footer__right">
           <a href="tel:+79990342434">+7 (999) 034-24-34</a>
-          <button>Заказать звонок</button>
+          <button class="footer__button">Заказать звонок</button>
         </div>
       </div>
 
@@ -648,18 +666,19 @@
       </div>
 
       <div class="modal__content">
-        <form action="/modal.php">
+        <form action="modal.php" method="POST">
           <h2>Оставьте заявку</h2>
           <h3>
             и наш менеджер перезвонит <br />
             вам в течении 5 минут
           </h3>
-          <input type="text" placeholder="Ваше имя" />
+          <input type="text" placeholder="Ваше имя" name="name" />
           <input
             type="number"
             id="telephoneInput"
             placeholder="+71234567890"
             required
+            name="telephone"
           />
           <button type="submit">Заказать звонок</button>
         </form>
@@ -668,7 +687,7 @@
 
     <script>
       const modal = document.querySelector("#modal");
-      const buttons = document.querySelectorAll(".cta-button");
+      const buttons = document.querySelectorAll(".cta-button, .footer__button");
 
       buttons.forEach((btn) => {
         btn.addEventListener("click", openModal);
